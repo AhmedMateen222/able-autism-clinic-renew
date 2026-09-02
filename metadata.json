@@ -1,0 +1,6 @@
+{
+  "name": "Able Autism Clinic",
+  "description": "Child-centered developmental therapy, ABA, speech, occupational therapy, and compassionate family support. Redefining normal together.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

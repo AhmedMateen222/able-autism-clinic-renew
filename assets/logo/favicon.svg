@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <rect width="200" height="200" rx="40" fill="#FFFFFF"/>
+  <g transform="translate(100, 100) scale(0.9)">
+    <g fill="#F59E0B">
+      <path d="M 0 0 C -12 -35 -24 -70 0 -92 C 24 -70 12 -35 0 0 Z" transform="rotate(-65) translate(0, -10)" fill="#FBBF24"/>
+      <path d="M 0 0 C -12 -35 -24 -70 0 -92 C 24 -70 12 -35 0 0 Z" transform="rotate(-38) translate(0, -10)" fill="#F59E0B"/>
+      <path d="M 0 0 C -12 -35 -24 -70 0 -92 C 24 -70 12 -35 0 0 Z" transform="rotate(-10) translate(0, -10)" fill="#FBBF24"/>
+      <path d="M 0 0 C -12 -35 -24 -70 0 -92 C 24 -70 12 -35 0 0 Z" transform="rotate(18) translate(0, -10)" fill="#F59E0B"/>
+      <path d="M 0 0 C -12 -35 -24 -70 0 -92 C 24 -70 12 -35 0 0 Z" transform="rotate(45) translate(0, -10)" fill="#FBBF24"/>
+      <path d="M 0 0 C -12 -35 -24 -70 0 -92 C 24 -70 12 -35 0 0 Z" transform="rotate(72) translate(0, -10)" fill="#F59E0B"/>
+      <path d="M 0 0 C -12 -35 -24 -70 0 -92 C 24 -70 12 -35 0 0 Z" transform="rotate(100) translate(0, -10)" fill="#FBBF24"/>
+      <path d="M 0 0 C -12 -35 -24 -70 0 -92 C 24 -70 12 -35 0 0 Z" transform="rotate(128) translate(0, -10)" fill="#F59E0B"/>
+      <path d="M 0 0 C -12 -35 -24 -70 0 -92 C 24 -70 12 -35 0 0 Z" transform="rotate(155) translate(0, -10)" fill="#FBBF24"/>
+      <path d="M 0 0 C -12 -35 -24 -70 0 -92 C 24 -70 12 -35 0 0 Z" transform="rotate(182) translate(0, -10)" fill="#F59E0B"/>
+      <path d="M 0 0 C -12 -35 -24 -70 0 -92 C 24 -70 12 -35 0 0 Z" transform="rotate(210) translate(0, -10)" fill="#FBBF24"/>
+    </g>
+    <g fill="#4A2E1B">
+      <path d="M 0 0 C -6 -15 -12 -30 0 -42 C 12 -30 6 -15 0 0 Z" transform="rotate(-50) translate(0, -5)" />
+      <path d="M 0 0 C -6 -15 -12 -30 0 -42 C 12 -30 6 -15 0 0 Z" transform="rotate(-20) translate(0, -5)" />
+      <path d="M 0 0 C -6 -15 -12 -30 0 -42 C 12 -30 6 -15 0 0 Z" transform="rotate(10) translate(0, -5)" />
+      <path d="M 0 0 C -6 -15 -12 -30 0 -42 C 12 -30 6 -15 0 0 Z" transform="rotate(40) translate(0, -5)" />
+      <path d="M 0 0 C -6 -15 -12 -30 0 -42 C 12 -30 6 -15 0 0 Z" transform="rotate(70) translate(0, -5)" />
+      <path d="M 0 0 C -6 -15 -12 -30 0 -42 C 12 -30 6 -15 0 0 Z" transform="rotate(100) translate(0, -5)" />
+      <path d="M 0 0 C -6 -15 -12 -30 0 -42 C 12 -30 6 -15 0 0 Z" transform="rotate(130) translate(0, -5)" />
+      <path d="M 0 0 C -6 -15 -12 -30 0 -42 C 12 -30 6 -15 0 0 Z" transform="rotate(160) translate(0, -5)" />
+      <path d="M 0 0 C -6 -15 -12 -30 0 -42 C 12 -30 6 -15 0 0 Z" transform="rotate(190) translate(0, -5)" />
+    </g>
+  </g>
+</svg>
