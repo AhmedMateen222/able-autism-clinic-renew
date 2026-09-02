@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" width="100%" height="100%" fill="none">
+  <!-- Sunflower Motif -->
+  <g transform="translate(110, 110)">
+    <!-- Outer Yellow Petals -->
+    <!-- Petal definitions around the left circle -->
+    <path d="M 0 -76 C -14 -98 14 -98 0 -76 Z" fill="#FBBF24" transform="rotate(-90)" />
+    <!-- 11 outer petals placed radially from -140 deg to +40 deg -->
+    <g fill="#F59E0B">
+      <!-- Topmost to bottommost outer petals -->
+      <path d="M 0 0 C -12 -35 -24 -70 0 -92 C 24 -70 12 -35 0 0 Z" transform="rotate(-65) translate(0, -10)" fill="#FBBF24"/>
+      <path d="M 0 0 C -12 -35 -24 -70 0 -92 C 24 -70 12 -35 0 0 Z" transform="rotate(-38) translate(0, -10)" fill="#F59E0B"/>
+      <path d="M 0 0 C -12 -35 -24 -70 0 -92 C 24 -70 12 -35 0 0 Z" transform="rotate(-10) translate(0, -10)" fill="#FBBF24"/>
+      <path d="M 0 0 C -12 -35 -24 -70 0 -92 C 24 -70 12 -35 0 0 Z" transform="rotate(18) translate(0, -10)" fill="#F59E0B"/>
+      <path d="M 0 0 C -12 -35 -24 -70 0 -92 C 24 -70 12 -35 0 0 Z" transform="rotate(45) translate(0, -10)" fill="#FBBF24"/>
+      <path d="M 0 0 C -12 -35 -24 -70 0 -92 C 24 -70 12 -35 0 0 Z" transform="rotate(72) translate(0, -10)" fill="#F59E0B"/>
+      <path d="M 0 0 C -12 -35 -24 -70 0 -92 C 24 -70 12 -35 0 0 Z" transform="rotate(100) translate(0, -10)" fill="#FBBF24"/>
+      <path d="M 0 0 C -12 -35 -24 -70 0 -92 C 24 -70 12 -35 0 0 Z" transform="rotate(128) translate(0, -10)" fill="#F59E0B"/>
+      <path d="M 0 0 C -12 -35 -24 -70 0 -92 C 24 -70 12 -35 0 0 Z" transform="rotate(155) translate(0, -10)" fill="#FBBF24"/>
+      <path d="M 0 0 C -12 -35 -24 -70 0 -92 C 24 -70 12 -35 0 0 Z" transform="rotate(182) translate(0, -10)" fill="#F59E0B"/>
+      <path d="M 0 0 C -12 -35 -24 -70 0 -92 C 24 -70 12 -35 0 0 Z" transform="rotate(210) translate(0, -10)" fill="#FBBF24"/>
+    </g>
+    <!-- Inner Brown Seeds Arc -->
+    <g fill="#4A2E1B">
+      <path d="M 0 0 C -6 -15 -12 -30 0 -42 C 12 -30 6 -15 0 0 Z" transform="rotate(-50) translate(0, -5)" />
+      <path d="M 0 0 C -6 -15 -12 -30 0 -42 C 12 -30 6 -15 0 0 Z" transform="rotate(-20) translate(0, -5)" />
+      <path d="M 0 0 C -6 -15 -12 -30 0 -42 C 12 -30 6 -15 0 0 Z" transform="rotate(10) translate(0, -5)" />
+      <path d="M 0 0 C -6 -15 -12 -30 0 -42 C 12 -30 6 -15 0 0 Z" transform="rotate(40) translate(0, -5)" />
+      <path d="M 0 0 C -6 -15 -12 -30 0 -42 C 12 -30 6 -15 0 0 Z" transform="rotate(70) translate(0, -5)" />
+      <path d="M 0 0 C -6 -15 -12 -30 0 -42 C 12 -30 6 -15 0 0 Z" transform="rotate(100) translate(0, -5)" />
+      <path d="M 0 0 C -6 -15 -12 -30 0 -42 C 12 -30 6 -15 0 0 Z" transform="rotate(130) translate(0, -5)" />
+      <path d="M 0 0 C -6 -15 -12 -30 0 -42 C 12 -30 6 -15 0 0 Z" transform="rotate(160) translate(0, -5)" />
+      <path d="M 0 0 C -6 -15 -12 -30 0 -42 C 12 -30 6 -15 0 0 Z" transform="rotate(190) translate(0, -5)" />
+    </g>
+  </g>
+
+  <!-- Typography matching exact brand structure -->
+  <g transform="translate(230, 115)">
+    <!-- ABLE -->
+    <text x="0" y="0" font-family="'Plus Jakarta Sans', 'Outfit', 'Segoe UI', sans-serif" font-weight="700" font-size="52" fill="#4A2E1B" letter-spacing="2">ABLE</text>
+    <!-- Autism Clinic -->
+    <text x="145" y="0" font-family="'Plus Jakarta Sans', 'Outfit', 'Segoe UI', sans-serif" font-weight="400" font-size="52" fill="#F59E0B" letter-spacing="1">Autism Clinic</text>
+    <!-- Redefining Normal (Italic Green Subheading) -->
+    <text x="135" y="42" font-family="'Playfair Display', 'Georgia', cursive, serif" font-style="italic" font-weight="600" font-size="34" fill="#2E8B57" letter-spacing="1">Redefining Normal</text>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="100%" height="100%">
+  <rect width="500" height="300" fill="#F0F9FF" rx="16"/>
+  <!-- Brain / Neurodiversity Spectrum of Colors -->
+  <g transform="translate(250, 140)">
+    <circle cx="0" cy="0" r="70" fill="#E0F2FE"/>
+    <!-- Infinity / Spectrum Symbol -->
+    <path d="M -40 0 C -40 -25 -15 -25 0 0 C 15 25 40 25 40 0 C 40 -25 15 -25 0 0 C -15 25 -40 25 -40 0 Z" stroke="url(#spectrumGrad)" stroke-width="14" fill="none" stroke-linecap="round"/>
+  </g>
+  <defs>
+    <linearGradient id="spectrumGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="35%" stop-color="#10B981"/>
+      <stop offset="70%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <!-- Sparkles -->
+  <circle cx="120" cy="80" r="10" fill="#FBBF24"/>
+  <circle cx="380" cy="80" r="12" fill="#38BDF8"/>
+  <circle cx="160" cy="220" r="8" fill="#34D399"/>
+  <circle cx="340" cy="220" r="10" fill="#F59E0B"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <rect width="400" height="400" fill="#E0F2FE"/>
+  <circle cx="200" cy="150" r="65" fill="#FBBF24"/>
+  <path d="M 100 370 C 100 260 300 260 300 370 Z" fill="#0284C7"/>
+  <circle cx="200" cy="140" r="50" fill="#FDE68A"/>
+  <path d="M 155 125 Q 200 90 245 125" stroke="#4A2E1B" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <!-- Clinic ID Badge / Stethoscope / Sunflower Pin -->
+  <circle cx="250" cy="300" r="14" fill="#F59E0B"/>
+  <circle cx="250" cy="300" r="6" fill="#4A2E1B"/>
+</svg>

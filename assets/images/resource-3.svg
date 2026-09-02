@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="100%" height="100%">
+  <rect width="500" height="300" fill="#E0F2FE" rx="16"/>
+  <!-- AAC Tablet / Visual Board -->
+  <rect x="130" y="45" width="240" height="170" rx="14" fill="#1E293B"/>
+  <rect x="145" y="60" width="210" height="140" rx="8" fill="#FFFFFF"/>
+  <!-- AAC Grid Communication Symbols -->
+  <rect x="155" y="70" width="40" height="40" rx="4" fill="#FEF3C7"/>
+  <circle cx="175" cy="90" r="10" fill="#F59E0B"/>
+  <rect x="205" y="70" width="40" height="40" rx="4" fill="#DCFCE7"/>
+  <rect x="220" y="80" width="10" height="20" fill="#10B981"/>
+  <rect x="255" y="70" width="40" height="40" rx="4" fill="#E0F2FE"/>
+  <circle cx="275" cy="90" r="12" fill="#0284C7"/>
+  <rect x="305" y="70" width="40" height="40" rx="4" fill="#F3E8FF"/>
+  <polygon points="325,78 335,95 315,95" fill="#8B5CF6"/>
+
+  <rect x="155" y="120" width="40" height="40" rx="4" fill="#FCE7F3"/>
+  <path d="M 175 135 Q 180 130 185 135 Q 175 145 175 145 Q 175 145 165 135 Q 170 130 175 135 Z" fill="#EC4899"/>
+  <rect x="205" y="120" width="40" height="40" rx="4" fill="#FEF9C3"/>
+  <circle cx="225" cy="140" r="10" fill="#CA8A04"/>
+  <rect x="255" y="120" width="40" height="40" rx="4" fill="#CCFBF1"/>
+  <circle cx="275" cy="140" r="8" fill="#0D9488"/>
+  <rect x="305" y="120" width="40" height="40" rx="4" fill="#FFE4E6"/>
+  <circle cx="325" cy="140" r="10" fill="#E11D48"/>
+  <!-- Home button -->
+  <circle cx="250" cy="228" r="7" fill="#64748B"/>
+</svg>
