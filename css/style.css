@@ -1019,6 +1019,30 @@ button, input, textarea, select {
   line-height: 1.6;
 }
 
+/* Mission & Vision Stacked Square-like Cards */
+.mission-vision-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.mission-vision-card {
+  width: 100%;
+  padding: 3rem 2.5rem;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05);
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+}
+
+.mission-vision-card .feature-card-desc {
+  font-size: 1.06rem;
+  line-height: 1.72;
+  color: var(--text-main);
+}
+
 /* ==========================================================================
    9. PROGRAMS SECTION
    ========================================================================== */
@@ -1682,6 +1706,31 @@ textarea.form-control, textarea.form-textarea {
   box-shadow: 0 10px 20px -4px rgba(16, 185, 129, 0.4);
 }
 
+/* Appointment Submit Button - Ensures text always remains completely visible inside */
+.btn-submit-appointment {
+  width: 100%;
+  justify-content: center;
+  padding: 0.95rem 1.75rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+  white-space: normal;
+  text-align: center;
+  word-break: normal;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.btn-submit-appointment span {
+  white-space: normal;
+  text-align: center;
+  line-height: 1.35;
+}
+
+.btn-submit-appointment .btn-icon-arrow {
+  flex-shrink: 0;
+}
+
 /* ==========================================================================
    15. PROCESS / STEP WORKFLOWS
    ========================================================================== */
@@ -2175,8 +2224,19 @@ textarea.form-control, textarea.form-textarea {
   .form-grid {
     grid-template-columns: 1fr;
   }
-  .form-card {
-    padding: 1.75rem 1.25rem;
+  .form-card, .fancy-form-card {
+    padding: 1.75rem 1.15rem;
+    border-radius: var(--radius-xl);
+  }
+  .mission-vision-card {
+    padding: 2.25rem 1.5rem;
+  }
+  .btn-submit-appointment {
+    font-size: 0.92rem;
+    padding: 0.85rem 1rem;
+    border-radius: var(--radius-xl);
+    gap: 0.4rem;
+    white-space: normal;
   }
   .hero-trust-list {
     flex-direction: column;
@@ -2215,6 +2275,17 @@ textarea.form-control, textarea.form-textarea {
 @media (max-width: 420px) {
   .site-header {
     height: 62px;
+  }
+  .form-card, .fancy-form-card {
+    padding: 1.5rem 0.85rem;
+  }
+  .mission-vision-card {
+    padding: 1.85rem 1.25rem;
+  }
+  .btn-submit-appointment {
+    font-size: 0.85rem;
+    padding: 0.8rem 0.75rem;
+    gap: 0.35rem;
   }
   .navbar-container {
     padding-left: 0.75rem;
