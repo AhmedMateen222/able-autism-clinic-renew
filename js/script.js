@@ -309,12 +309,9 @@ function initWhatsAppTracker() {
   if (!waBtn) return;
 
   // Ensure keyboard accessibility
-  waBtn.setAttribute('tabindex', '0');
-  waBtn.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') {
-      window.open(waBtn.getAttribute('href'), '_blank');
-    }
-  });
+  if (!waBtn.hasAttribute('tabindex')) {
+    waBtn.setAttribute('tabindex', '0');
+  }
 }
 
 /**
