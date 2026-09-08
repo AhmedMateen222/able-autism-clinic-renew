@@ -3,6 +3,8 @@
  * Vanilla JS for Navigation, Accordion, Scroll Reveal, Back-to-Top, and Form Validation
  */
 
+import { submitAppointment } from './supabase.js';
+
 document.addEventListener('DOMContentLoaded', () => {
   initNavbar();
   initFaqAccordion();
@@ -223,8 +225,15 @@ function initForms() {
   // Appointment / Consultation Request Form
   const appointmentForm = document.getElementById('consultationRequestForm');
   if (appointmentForm) {
-    appointmentForm.addEventListener('submit', (e) => {
+    let isSubmitting = false;
+
+    appointmentForm.addEventListener('submit', async (e) => {
       e.preventDefault();
+
+      if (isSubmitting) {
+        return;
+      }
+
       let isValid = true;
 
       const parentName = document.getElementById('parentName');
@@ -233,31 +242,43 @@ function initForms() {
       const phone = document.getElementById('phone');
       const email = document.getElementById('email');
       const serviceInterest = document.getElementById('serviceInterest');
+      const preferredSchedule = document.getElementById('preferredSchedule');
+      const diagnosisStatus = document.getElementById('diagnosisStatus');
+      const additionalNotes = document.getElementById('additionalNotes');
+      const submitBtn = document.getElementById('submitAppointmentBtn');
       const successBanner = document.getElementById('appointmentSuccessBanner');
+      const errorBanner = document.getElementById('appointmentFormError');
+      const errorText = document.getElementById('appointmentFormErrorText');
+
+      // Clear any previous form-level error alert
+      if (errorBanner) {
+        errorBanner.classList.remove('is-visible');
+        errorBanner.style.display = 'none';
+      }
 
       appointmentForm.querySelectorAll('.form-group').forEach(grp => grp.classList.remove('has-error'));
 
-      if (!parentName.value.trim()) {
+      if (!parentName || !parentName.value.trim()) {
         showError(parentName, 'Parent or guardian name is required');
         isValid = false;
       }
 
-      if (!childName.value.trim()) {
+      if (!childName || !childName.value.trim()) {
         showError(childName, "Please enter your child's name");
         isValid = false;
       }
 
-      if (!childAge.value.trim()) {
+      if (!childAge || !childAge.value.trim()) {
         showError(childAge, "Please indicate your child's age");
         isValid = false;
       }
 
-      if (!phone.value.trim() || phone.value.trim().length < 7) {
+      if (!phone || !phone.value.trim() || phone.value.trim().length < 7) {
         showError(phone, 'Please provide a valid phone number');
         isValid = false;
       }
 
-      if (!email.value.trim() || !isValidEmail(email.value.trim())) {
+      if (!email || !email.value.trim() || !isValidEmail(email.value.trim())) {
         showError(email, 'Please enter a valid email address');
         isValid = false;
       }
@@ -267,12 +288,85 @@ function initForms() {
         isValid = false;
       }
 
-      if (isValid) {
+      if (!isValid) {
+        return;
+      }
+
+      // Map fields strictly as specified:
+      // parentName → parent_name
+      // childName → child_name
+      // childAge → child_age
+      // phone → phone
+      // email → email
+      // serviceInterest → service_interest
+      // preferredSchedule → preferred_schedule
+      // diagnosisStatus → diagnosis_status
+      // additionalNotes → additional_notes
+      const formData = {
+        parent_name: parentName.value.trim(),
+        child_name: childName.value.trim(),
+        child_age: childAge.value.trim(),
+        phone: phone.value.trim(),
+        email: email.value.trim(),
+        service_interest: serviceInterest.value,
+        preferred_schedule: preferredSchedule ? preferredSchedule.value : '',
+        diagnosis_status: diagnosisStatus ? diagnosisStatus.value : '',
+        additional_notes: additionalNotes ? additionalNotes.value.trim() : ''
+      };
+
+      // Prevent duplicate submissions while request is being processed
+      isSubmitting = true;
+      let originalBtnContent = '';
+      if (submitBtn) {
+        originalBtnContent = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.classList.add('is-submitting');
+        submitBtn.innerHTML = '<span>Submitting Request...</span>';
+      }
+
+      try {
+        await submitAppointment(formData);
+
+        // Success: hide form and show existing success banner
+        appointmentForm.reset();
         appointmentForm.style.display = 'none';
         if (successBanner) {
           successBanner.classList.add('is-visible');
           successBanner.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
+      } catch (err) {
+        console.error('Error saving appointment to Supabase:', err);
+
+        // Show clear error message to user
+        if (errorBanner) {
+          const message = err?.message || 'An error occurred while submitting your appointment. Please try again or contact us directly.';
+          if (errorText) {
+            errorText.textContent = message;
+          } else {
+            errorBanner.textContent = message;
+          }
+          errorBanner.style.display = 'flex';
+          errorBanner.classList.add('is-visible');
+          errorBanner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // Re-enable submit button
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.classList.remove('is-submitting');
+          submitBtn.innerHTML = originalBtnContent;
+        }
+      } finally {
+        isSubmitting = false;
+      }
+    });
+
+    // Automatically hide error alert when user modifies inputs
+    appointmentForm.addEventListener('input', () => {
+      const errorBanner = document.getElementById('appointmentFormError');
+      if (errorBanner && errorBanner.classList.contains('is-visible')) {
+        errorBanner.classList.remove('is-visible');
+        errorBanner.style.display = 'none';
       }
     });
   }

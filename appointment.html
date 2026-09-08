@@ -260,6 +260,16 @@
             <span style="color: var(--text-main);">Able Autism Clinic respects your family's privacy. All clinical submissions and medical communications are strictly confidential.</span>
           </div>
 
+          <!-- Submission Error Message Alert -->
+          <div id="appointmentFormError" class="form-alert-error" role="alert" style="display: none;">
+            <svg viewBox="0 0 24 24" class="form-alert-icon" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="8" x2="12" y2="12"/>
+              <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+            <div id="appointmentFormErrorText" class="form-alert-text"></div>
+          </div>
+
           <!-- Submit Button -->
           <button type="submit" id="submitAppointmentBtn" class="btn btn-primary btn-submit-appointment">
             <span>Submit Appointment Request</span>

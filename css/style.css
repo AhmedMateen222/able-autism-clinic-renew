@@ -1688,6 +1688,49 @@ textarea.form-control, textarea.form-textarea {
   animation: fadeInDown 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* Form General Error Alert */
+.form-alert-error {
+  display: none;
+  background: #FEF2F2;
+  border: 1.5px solid #FCA5A5;
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  color: #991B1B;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  align-items: flex-start;
+  gap: 0.75rem;
+  box-shadow: 0 4px 12px -2px rgba(239, 68, 68, 0.1);
+}
+
+.form-alert-error.is-visible {
+  display: flex;
+  animation: fadeInDown 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.form-alert-icon {
+  width: 22px;
+  height: 22px;
+  stroke: #DC2626;
+  fill: none;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.form-alert-text {
+  flex: 1;
+}
+
+.btn-submit-appointment.is-submitting {
+  opacity: 0.75;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 @keyframes fadeInDown {
   from { opacity: 0; transform: translateY(-12px); }
   to { opacity: 1; transform: translateY(0); }
